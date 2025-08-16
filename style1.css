@@ -1,0 +1,787 @@
+/* -------------------------
+   Theme variables & reset
+------------------------- */
+:root {
+  --accent: #ffb400;
+  --muted: #6c757d;
+  --card-shadow: 0 10px 25px rgba(14, 21, 47, 0.06);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Smooth scrolling with offset for fixed nav */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
+}
+
+html,
+body {
+  overflow-x: hidden; /* Fix right spacing on mobile */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  color: #000;
+  font-size: 14px; /* Smaller base font size */
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Safe image rendering */
+}
+
+/* -------------------------
+   Scrollbar Styles
+------------------------- */
+
+/* Webkit browsers - Hide scrollbar by default */
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+/* Show scrollbar on hover */
+body:hover::-webkit-scrollbar {
+  width: 10px;
+}
+
+body:hover::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+body:hover::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #ff4e50, #f9d423);
+  border-radius: 5px;
+}
+
+body:hover::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(90deg, #f9d423, #ff4e50);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: none; /* Hide by default */
+}
+
+body:hover {
+  scrollbar-width: thin;
+  scrollbar-color: #ff4e50 #f1f1f1;
+}
+
+/* -------------------------
+   Left Sidebar (Desktop)
+------------------------- */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 240px;
+  padding: 26px 18px;
+  background: #F84840;
+  border-right: 1px solid #eee;
+  z-index: 1050;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profile-img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent);
+  display: block;
+  margin: 0 auto 8px;
+}
+
+.offcanvas-title,
+.navbar-brand {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  background: linear-gradient(90deg, #ff4e50, #f9d423);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu-icon {
+  background: linear-gradient(90deg, #ff4e50, #f9d423);
+}
+
+.sidebar h4 {
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.sidebar small {
+  display: block;
+  text-align: center;
+  color: #000;
+  margin-bottom: 6px;
+  font-size: 13px;
+}
+
+.divider {
+  height: 1px;
+  background: #f0f0f0;
+  margin: 10px 0;
+}
+
+.sidebar .progress {
+  height: 6px;
+  background: #f3f3f3;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.sidebar .progress-bar {
+  background: var(--accent);
+}
+
+.sidebar .socials a {
+  color: #222;
+  margin-right: 10px;
+  transition: all 0.15s;
+}
+
+.sidebar .socials a:hover {
+  color: #000;
+}
+
+.bar-color {
+  background: var(--accent);
+}
+
+.mobile-progress {
+  height: 6px;
+  background: #f3f3f3;
+  border-radius: 6px;
+  overflow: hidden;
+}
+/* -------------------------
+   Main Content
+------------------------- */
+.main-content {
+  margin-left: 240px; /* Leave space for sidebar on desktop */
+  padding-bottom: 80px;
+}
+
+section {
+  padding: 44px 20px;
+}
+
+.hero {
+  background: #F84840;
+  padding: 56px 20px;
+  display: flex;
+  flex-wrap: wrap; /* Avoid overflow on narrow screens */
+  gap: 20px;
+  align-items: center;
+}
+
+.highlight {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* -------------------------
+   Skill Cards
+------------------------- */
+.skill-card {
+  padding: 1.5rem;
+  border: none;
+  border-radius: 15px;
+  background: #ffb400 !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px #F84840;
+}
+
+.icon-circle {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff512f, #dd2476);
+  color: #fff;
+  font-size: 2rem;
+  margin: 0 auto; /* Center inside card */
+  transition: 0.3s ease-in-out;
+}
+
+.skill-card:hover .icon-circle {
+  background: linear-gradient(135deg, #00f260, #0575e6);
+  transform: rotate(10deg);
+}
+
+/* -------------------------
+   Certifications
+------------------------- */
+.cert-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: contain;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.cert-card p {
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+
+.cert-card:hover .cert-img {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px #F84840;
+}
+
+#certifications p {
+  font-size: 0.9rem;
+  margin-top: 10px;
+  color: #000;
+}
+
+@media (max-width: 576px) {
+  #certifications .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* -------------------------
+   Work Cards
+------------------------- */
+.work-card {
+  border: 2px solid #ffb400;
+  border-radius: 10px;
+  background-color: #ffb400 !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px #F84840;
+  border-color: #e09b00;
+}
+
+.work-logo {
+  max-width: 60px;
+  max-height: 60px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+#work h2 {
+  color: #333;
+}
+
+#work small {
+  font-style: italic;
+}
+
+/* -------------------------
+   Portfolio
+------------------------- */
+.card {
+  border: none;
+  border-radius: 10px;
+  background: #F84840;
+  box-shadow: var(--card-shadow);
+}
+
+#portfolio {
+  padding: 60px 0;
+}
+
+#portfolio img {
+  object-fit: contain;
+  height: 400px;
+}
+
+
+/* Carousel caption responsive fix */
+.carousel-caption {
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%);
+  text-align: center;
+  padding: 1rem;
+  width: 70%;
+  height: 15%;
+}
+
+/* Make sure text and button stay centered on mobile/tablet */
+.carousel-caption .caption-text,
+.carousel-caption {
+  display: inline-block;
+  margin: 0.1rem auto !important;
+}
+.btn-view-case-study {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: linear-gradient(135deg, #ff512f, #dd2476);
+  color: #fff;
+  font-weight: 600;
+  padding: 8px 15px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.btn-view-case-study i {
+  font-size: 18px;
+}
+
+.btn-view-case-study:hover {
+  background: linear-gradient(135deg, #ff512f, #dd2489);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  color: black;
+}
+
+
+/* Mobile adjustments */
+@media (max-width: 991px) {
+  .carousel-caption {
+    top: 65%;
+	width: 90%;
+	height: 50px;
+  }
+  .btn-view-case-study {
+height: 35px;
+}
+
+.btn-view-case-study i {
+  font-size: 15px;
+}
+
+  .carousel-caption h6 {
+    font-size: 22px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 576px) {
+  .carousel-caption {
+    top: 55%;
+	height: 40px;
+  }
+  .carousel-caption h6{
+    font-size: 14px;
+  }
+    .btn-view-case-study {
+height: 25px;
+}
+
+.btn-view-case-study i {
+  font-size: 15px;
+}
+
+}
+
+
+.portfolio-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 193, 7, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: all 0.4s ease;
+}
+
+.portfolio-wrapper:hover .overlay {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.case-study-btn {
+  background-color: tomato;
+  color: white;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.case-study-btn:hover {
+  background-color: #F84840;
+  color: black;
+}
+
+.carousel-item {
+  transition: transform 0.8s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-indicators [data-bs-target]::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border-radius: 50%;
+  border: 2px solid tomato;
+  background: #F84840;
+  z-index: -1;
+}
+
+.carousel-indicators [data-bs-target]:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 8px rgba(255, 78, 80, 0.7),
+              0 0 12px rgba(249, 212, 35, 0.7);
+}
+
+.carousel-indicators .active {
+  transform: scale(1.3);
+}
+
+@media (max-width: 576px) {
+  #portfolio img {
+    height: 200px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .carousel-caption {
+    top: 70%;
+	height: 45px;
+  }
+  .carousel-caption h6{
+    font-size: 22px;
+  }
+    .btn-view-case-study {
+height: 25px;
+}
+
+.btn-view-case-study i {
+  font-size: 15px;
+}
+}
+
+/* -------------------------
+   Learnings
+------------------------- */
+#learnings {
+  padding: 60px 0;
+}
+
+.card1 {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card1:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px #F84840;
+  border-color: #e09b00;
+}
+
+.card1 img {
+  height: 200px;
+  object-fit: contain;
+}
+
+.card-title {
+  font-weight: bold;
+  color: #333;
+}
+
+.card-text {
+  font-size: 0.9rem;
+}
+
+.card-body a.btn {
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+/* -------------------------
+   Contact Form
+------------------------- */
+#contact .input-group-text {
+  border-radius: 8px 0 0 8px;
+  background-color: #fff;
+}
+
+#contact .form-control {
+  border-radius: 0 8px 8px 0;
+  font-size: 0.9rem;
+}
+
+#contact textarea.form-control {
+  border-radius: 0 8px 8px 0;
+  resize: none;
+}
+
+#contact .send-btn {
+  font-weight: 600;
+  background-color: #ffc107;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+#contact .send-btn:hover {
+  background-color: #e0a800;
+  box-shadow: 0 4px 15px rgba(255, 193, 7, 0.5);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  #contact h2 {
+    font-size: 1.5rem;
+  }
+  #contact p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Form Message Animations */
+#formMessage {
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-5px); }
+  40%, 80% { transform: translateX(5px); }
+}
+
+.shake {
+  animation: shake 0.5s;
+}
+
+@keyframes pop {
+  0% { transform: scale(0.9); opacity: 0; }
+  50% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+.pop {
+  animation: pop 0.4s ease-out;
+}
+
+/* -------------------------
+   Buttons & Misc
+------------------------- */
+.btn-warning {
+  background: var(--accent);
+  border: none;
+}
+
+.btn-warning:hover {
+  background: #d99b00;
+}
+
+.timeline {
+  border-left: 3px solid var(--accent);
+  padding-left: 14px;
+}
+
+.map img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
+}
+/* ----------- RIGHT NAV (Desktop) ----------- */
+.right-nav {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  z-index: 1100;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.right-nav .nav-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  color: #333;
+  border: 2px solid #F84840;
+  transition: all 0.18s ease;
+  box-shadow: 0 6px 18px rgba(14, 21, 47, 0.05);
+}
+
+.right-nav .nav-icon i {
+  font-size: 18px;
+}
+
+.right-nav .nav-icon.active,
+.right-nav .nav-icon:hover {
+  background: #F84840;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* =========================
+   Bottom Nav - Mobile/Tablet
+   ========================= */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-top: 2px solid var(--accent, #ff4e50);
+  z-index: 2000;
+}
+
+.bottom-nav a {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 0;
+  transition: all 0.3s ease;
+}
+
+.bottom-nav-icon {
+  font-size: 1.4rem;
+  background: linear-gradient(90deg, #ff4e50, #f9d423);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bottom-nav a:hover,
+.bottom-nav a.active {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Hide/Show Rules */
+@media (max-width: 991px) {
+  .right-nav {
+    display: none !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .bottom-nav {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .bottom-nav {
+    display: flex !important;
+  }
+}
+
+/* -------------------------
+   Testimonial Card & Footer
+   ------------------------- */
+.testimonial-card {
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: var(--card-shadow);
+  background: #fff;
+}
+
+.small {
+  font-size: 13px;
+}
+
+footer {
+  background: #F84840;
+  padding: 18px 20px;
+}
+
+/* -------------------------
+   Offcanvas (mobile) tweaks
+   ------------------------- */
+.offcanvas {
+  max-width: 85vw;
+}
+
+@media (max-width: 991px) {
+  .sidebar {
+    display: none;
+  }
+  .main-content {
+    margin-left: 0;
+  }
+  section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  body {
+    font-size: 13px;
+  }
+  .profile-img {
+    width: 90px;
+    height: 90px;
+  }
+  .right-nav .nav-icon {
+    width: 40px;
+    height: 40px;
+  }
+}

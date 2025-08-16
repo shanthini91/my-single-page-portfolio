@@ -1,0 +1,944 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shanu's — Portfolio</title>
+  <!-- Favicon -->
+<link rel="icon" href="images/favicon.svg" type="image/svg">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+
+  <!-- Bootstrap Icons & Font Awesome -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+
+  <!-- MOBILE: sidebar offcanvas toggle -->
+  <nav class="navbar navbar-dark bg-dark shadow-sm d-lg-none fixed-top">
+    <div class="container-fluid">
+      <button class="btn menu-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidebar" aria-controls="offcanvasSidebar" aria-label="Toggle sidebar">
+        <i class="bi bi-list text-dark"></i>
+      </button>
+      <a class="navbar-brand ms-2 text-white" href="#hero">Shanthini Priyanka</a>
+      <div>
+        <a class="btn btn-warning btn-sm" href="#contact">Hire</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- OFFCANVAS SIDEBAR FOR MOBILE -->
+  <div class="offcanvas offcanvas-start bg-dark text-white" tabindex="-1" id="offcanvasSidebar" aria-labelledby="offcanvasSidebarLabel">
+    <div class="offcanvas-header">
+      <h6 class="offcanvas-title text-white" id="offcanvasSidebarLabel">Shanthini Priyanka</h6>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="text-center mb-3">
+        <img src="images/profile.jpg" class="profile-img mb-2" alt="profile">
+        <small class="d-block text-white">Front-end Developer</small>
+      </div>
+      <p class="small text-white">Creative front-end developer building responsive interfaces.</p>
+
+      <div class="divider my-2"></div>
+
+      <h6 class="small fw-bold">Skills</h6>
+      <small class="text-start">HTML <span class="float-end">95%</span></small>
+      <div class="progress mobile-progress mb-2"><div class="progress-bar bar-color" style="width:95%"></div></div>
+      <small class="text-start">CSS <span class="float-end">95%</span></small>
+      <div class="progress mobile-progress mb-2"><div class="progress-bar bar-color" style="width:95%"></div></div>
+      <small class="text-start">JS <span class="float-end">85%</span></small>
+      <div class="progress mobile-progress mb-2"><div class="progress-bar bar-color" style="width:85%"></div></div>
+      <small class="text-start">React JS <span class="float-end">85%</span></small>
+      <div class="progress mobile-progress mb-2"><div class="progress-bar bar-color" style="width:85%"></div></div>
+      <small class="text-start">Figma <span class="float-end">70%</span></small>
+      <div class="progress mobile-progress mb-2"><div class="progress-bar bar-color" style="width:70%"></div></div>
+      <small class="text-start">Wireframing <span class="float-end">95%</span></small>
+      <div class="progress mobile-progress mb-2"><div class="progress-bar bar-color" style="width:95%"></div></div>
+      <small class="text-start">Prototyping <span class="float-end">95%</span></small>
+      <div class="progress mobile-progress mb-2"><div class="progress-bar bar-color" style="width:95%"></div></div>
+
+      <div class="divider my-2"></div>
+
+      <h6 class="small fw-bold">Contact</h6>
+      <p class="small mb-1"><i class="bi bi-geo-alt me-1"></i> Shenoy Nagar, Chennai</p>
+      <p class="small mb-1"><i class="bi bi-envelope me-1"></i> shanthinipriyanka14@gmail.com</p>
+      <p class="small mb-1"><i class="bi bi-telephone me-1"></i> +91 8778539686</p>
+
+      <div class="divider my-2"></div>
+
+      <div class="socials">
+        <a href="https://linkedin.com/in/shanu-singam/" target="_blank" class="me-2 text-white"><i class="fab fa-linkedin fa-lg"></i></a>
+        <a href="https://github.com/shanthini91/" target="_blank" class="me-2 text-white"><i class="fab fa-github fa-lg"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- LEFT SIDEBAR (desktop) -->
+  <aside class="sidebar col-12 col-md-4 col-lg-3 d-lg-flex" aria-label="Sidebar">
+    <img src="images/profile.jpg" alt="profile" class="profile-img">
+    <h4>Shanthini Priyanka</h4>
+    <small class="text-dark">Front-end Developer</small>
+
+    <div class="divider"></div>
+
+    <p class="small text-center">I build fast, accessible, responsive UI with attention to detail.</p>
+
+    <div class="divider"></div>
+
+    <div class="text-start">
+      <h6 class="small fw-bold">Languages</h6>
+      <small class="text-start">English <span class="float-end">100%</span></small>
+      <div class="progress mb-2"><div class="progress-bar" style="width:100%"></div></div>
+      <small class="text-start">Tamil <span class="float-end">100%</span></small>
+      <div class="progress mb-2"><div class="progress-bar" style="width:100%"></div></div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="text-start">
+      <h6 class="small fw-bold">Skills</h6>
+      <small class="text-start">HTML <span class="float-end">95%</span></small>
+      <div class="progress mb-2"><div class="progress-bar" style="width:95%"></div></div>
+      <small class="text-start">CSS <span class="float-end">90%</span></small>
+      <div class="progress mb-2"><div class="progress-bar" style="width:90%"></div></div>
+      <small class="text-start">JavaScript <span class="float-end">85%</span></small>
+      <div class="progress mb-2"><div class="progress-bar" style="width:85%"></div></div>
+      <small class="text-start">React JS <span class="float-end">85%</span></small>
+      <div class="progress mb-2"><div class="progress-bar" style="width:85%"></div></div>
+      <small class="text-start">Figma <span class="float-end">70%</span></small>
+      <div class="progress mb-2"><div class="progress-bar" style="width:70%"></div></div>
+      <small class="text-start">Wireframing <span class="float-end">95%</span></small>
+      <div class="progress mb-2"><div class="progress-bar" style="width:95%"></div></div>
+      <small class="text-start">Prototyping <span class="float-end">95%</span></small>
+      <div class="progress mb-2"><div class="progress-bar" style="width:95%"></div></div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="text-start">
+      <h6 class="small fw-bold">Education</h6>
+      <p class="small mb-0 fw-semibold">M.E CSE, SAEC — 2012–2014</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="text-start">
+      <h6 class="small fw-bold mb-1">Contact</h6>
+      <p class="small mb-1"><i class="bi bi-geo-alt me-1"></i> Shenoy Nagar, Chennai</p>
+      <p class="small mb-1"><i class="bi bi-envelope me-1"></i> shanthinipriyanka14@gmail.com</p>
+      <p class="small mb-1"><i class="bi bi-telephone me-1"></i> +91 8778539686</p>
+    </div>
+
+    <div class="mt-auto text-center">
+      <div class="socials mt-3">
+        <a href="https://linkedin.com/in/shanu-singam/" target="_blank" class="me-2 text-dark"><i class="fab fa-linkedin fa-lg"></i></a>
+        <a href="https://github.cpm/shanthini91/" target="_blank" class="me-2 text-dark"><i class="fab fa-github fa-lg"></i></a>
+      </div>
+      <small class="d-block text-muted mt-2">Available for freelance</small>
+    </div>
+    <a class="btn btn-warning btn-sm w-100 mt-2" href="Shanthini_Priyanka.pdf" download target="_blank" data-aos="zoom-in">Download CV</a>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+  
+
+    <!-- RIGHT NAV ICONS (Desktop only) -->
+<div class="right-nav d-none d-lg-flex">
+ <a class="nav-icon active" href="#hero" title="Home"><i class="bi bi-house"></i></a> 
+ <a class="nav-icon" href="#skills" title="Skills"><i class="bi bi-briefcase"></i></a> 
+ <a class="nav-icon" href="#certifications" title="Certifications"><i class="bi bi-star"></i></a> 
+ <a class="nav-icon" href="#learnings" title="Learnings"><i class="bi bi-mortarboard"></i></a> 
+ <a class="nav-icon" href="#work" title="Work"><i class="bi bi-briefcase-fill"></i></a> 
+ <a class="nav-icon" href="#portfolio" title="Portfolio"><i class="bi bi-grid"></i></a>
+ <a class="nav-icon" href="#contact" title="Contact"><i class="bi bi-envelope"></i></a> 
+</div>
+
+<!-- BOTTOM NAV (Tablet & Mobile only) -->
+<div class="bottom-nav d-md-block d-lg-none">
+  <a href="#hero" class="active"><i class="bi bi-house bottom-nav-icon"></i></a>
+  <a href="#skills"><i class="bi bi-briefcase bottom-nav-icon"></i></a>
+  <a href="#certifications"><i class="bi bi-star bottom-nav-icon"></i></a>
+  <a href="#work"><i class="bi bi-briefcase-fill bottom-nav-icon"></i></a>
+  <a href="#portfolio"><i class="bi bi-grid bottom-nav-icon"></i></a>
+  <a href="#learnings"><i class="bi bi-mortarboard bottom-nav-icon"></i></a>
+  <a href="#contact"><i class="bi bi-envelope bottom-nav-icon"></i></a>
+</div>
+
+
+
+    <!-- HERO / ABOUT ME (updated content integrated) -->
+    <section id="hero" class="hero" data-aos="zoom-out">
+      <div class="flex-grow-1 me-lg-4">
+        <h1 class="mb-1">I'm <span class="highlight">Shanthini Priyanka</span></h1>
+        <h6 class="small text-muted mb-3">Front-end Developer • UI/UX enthusiast</h6>
+
+        <p class="small text-muted mb-3">
+          I am a UI/UX Developer with 3 years of professional experience, most recently at
+          <strong>Aetram Infotech</strong>, specializing in designing and developing responsive, user-friendly
+          websites and applications. I am actively seeking opportunities in UI/UX design or development.
+        </p>
+        <p class="small text-muted mb-3">
+          My career began as an Assistant Professor at <strong>Syed Ammal Engineering College</strong>, where I taught
+          Computer Science theory and lab sessions to 2nd and 3rd-year students. During this time, I also developed internal
+          web applications for staff ranking, symposiums, and conferences. After a brief period in the banking sector with
+          <strong>HDFC Life</strong>, I transitioned fully into the IT industry.
+        </p>
+        <p class="small text-muted mb-3">
+          As a <strong>Full Stack Java Developer</strong> at <strong>GTS, Chennai</strong>, I led a 4-member team, collaborated
+          directly with clients to gather and refine requirements, and delivered end-to-end web solutions using
+          <em class="text-warning">Java, Spring Boot, MySQL, HTML, CSS, JavaScript</em>, and <em class="text-warning">Bootstrap</em>.
+        </p>
+        <p class="small text-muted mb-3">
+          At <strong>Aetram Group</strong>, I focused on UI/UX development—designing and launching multiple websites,
+          creating wireframes and prototypes in <em class="text-warning">Figma</em>, and implementing responsive, accessible
+          front-end interfaces. This experience strengthened my passion for building intuitive, user-centered digital
+          experiences that balance functionality with aesthetics.
+        </p>
+
+        <div class="d-flex gap-2">
+          <a class="btn btn-warning btn-sm" href="#contact">Hire Me</a>
+          <a class="btn btn-outline-warning btn-sm" href="#portfolio">View Portfolio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+<section id="skills" class="skills" data-aos="fade-right">
+  <div class="container">
+    <h2 class="text-center mb-2">Skills</h2>
+    <p class="text-center small text-muted mb-4">What I can help you with</p>
+    <div class="row g-4">
+      
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="card skill-card text-center h-100">
+          <div class="icon-circle">
+            <i class="bi bi-code-slash"></i>
+          </div>
+          <h6 class="small mt-3">Front-end Development</h6>
+          <p class="small text-muted">HTML, CSS, JavaScript, React — performance-first and accessible.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card skill-card text-center h-100">
+          <div class="icon-circle">
+            <i class="bi bi-palette"></i>
+          </div>
+          <h6 class="small mt-3">UI / UX Design</h6>
+          <p class="small text-muted">Wireframes, prototypes, and design systems for consistent experiences.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+        <div class="card skill-card text-center h-100">
+          <div class="icon-circle">
+            <i class="bi bi-phone"></i>
+          </div>
+          <h6 class="small mt-3">Responsive & Mobile</h6>
+          <p class="small text-muted">Mobile-first development and cross-device testing.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+      <div class="divider my-2"></div>
+	  
+	  <!-- CERTIFICATIONS (Carousel with Images) -->
+<section id="certifications" class="py-5" data-aos="fade-left">
+  <div class="container">
+    <h2 class="text-center mb-4">Certifications</h2>
+    <div class="row text-center justify-content-center">
+
+      <div class="col-12 col-md-3 mb-4 cert-card" data-aos="fade-up" data-aos-delay="0">
+        <img src="images/google.jpg" alt="Google UX" class="img-fluid cert-img" data-aos="zoom-in" data-aos-delay="100">
+        <p class="mt-2">Google UX Certification</p>
+      </div>
+
+      <div class="col-12 col-md-3 mb-4 cert-card" data-aos="fade-up" data-aos-delay="100">
+        <img src="images/reactjs.jpg" alt="ReactJS" class="img-fluid cert-img" data-aos="zoom-in" data-aos-delay="100">
+        <p class="mt-2">ReactJS - Udemy</p>
+      </div>
+
+      <div class="col-12 col-md-3 mb-4 cert-card" data-aos="fade-up" data-aos-delay="200">
+        <img src="images/bootstrap.jpg" alt="Bootstrap 5" class="img-fluid cert-img" data-aos="zoom-in" data-aos-delay="100">
+        <p class="mt-2">Bootstrap 5 - Udemy</p>
+      </div>
+
+      <div class="col-12 col-md-3 mb-4 cert-card" data-aos="fade-up" data-aos-delay="300">
+        <img src="images/oracle.jpg" alt="Oracle" class="img-fluid cert-img" data-aos="zoom-in" data-aos-delay="100">
+        <p class="mt-2">Oracle - Udemy</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <div class="divider my-2"></div>
+	  
+	      <!-- WORK HISTORY -->
+<section id="work" data-aos="fade-up">
+  <div class="container">
+    <h2 class="text-center mb-3">Work History</h2>
+    <div class="row g-4">
+      
+      <!-- Aetram Infotech -->
+      <div class="col-md-3 col-sm-6" data-aos="fade-right">
+        <div class="card work-card p-3 h-100 text-center">
+          <img src="images/aetram.png" alt="Aetram Infotech" class="work-logo mb-2">
+          <h6 class="mb-1 small fw-semibold">Front-end Developer</h6>
+          <small class="text-muted">Aetram Infotech — 2022–2023</small>
+          <p class="small text-muted mt-2">
+            Developed responsive websites, landing pages, email templates, and UI components using HTML, CSS, JavaScript, and Bootstrap.
+          </p>
+        </div>
+      </div>
+
+      <!-- GTS -->
+      <div class="col-md-3 col-sm-6" data-aos="fade-left">
+        <div class="card work-card p-3 h-100 text-center">
+          <img src="images/gts.png" alt="GTS" class="work-logo mb-2">
+          <h6 class="mb-1 small fw-semibold">Fullstack Java Developer</h6>
+          <small class="text-muted">GTS — 2021–2022</small>
+          <p class="small text-muted mt-2">
+            Integrated frontend with backend & database, deployed applications on AWS, and collaborated with clients for requirement gathering.
+          </p>
+        </div>
+      </div>
+
+      <!-- SAEC -->
+      <div class="col-md-3 col-sm-6" data-aos="fade-left">
+        <div class="card work-card p-3 h-100 text-center">
+          <img src="images/saec.png" alt="SAEC" class="work-logo mb-2">
+          <h6 class="mb-1 small fw-semibold">Assistant Professor</h6>
+          <small class="text-muted">SAEC — 2014–2016</small>
+          <p class="small text-muted mt-2">
+            Taught Computer Science courses, conducted lab sessions, and developed internal web tools for staff ranking and event management.
+          </p>
+        </div>
+      </div>
+
+      <!-- HDFC Life -->
+      <div class="col-md-3 col-sm-6" data-aos="fade-left">
+        <div class="card work-card p-3 h-100 text-center">
+          <img src="images/hdfc.png" alt="HDFC Life" class="work-logo mb-2">
+          <h6 class="mb-1 small fw-semibold">Development Manager</h6>
+          <small class="text-muted">HDFC Life — 2018–2019</small>
+          <p class="small text-muted mt-2">
+            Managed MIS reports and coordinated with vendors to ensure smooth operational workflows.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+      <div class="divider my-2"></div>
+	  
+	  
+
+	      <!-- PORTFOLIO -->
+    <section id="portfolio" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-2">Portfolio</h2>
+    <p class="text-center small text-muted mb-4">Featured Projects</p>
+
+    <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+       <!-- Slide 1 -->
+<div class="carousel-item active">
+  <div class="portfolio-wrapper">
+  <img src="images/project1.png" class="d-block w-100 img-fluid rounded shadow" alt="Aetram Groups Website">
+  <div class="carousel-caption bg-warning bg-opacity-30 p-2 rounded">
+    <h6 class="mb-2">
+      <a href="https://aetramgroup.com/" target="_blank" class="text-dark text-decoration-none">
+        Aetram Groups Website
+      </a><a href="#case-study" class="btn-view-case-study" data-bs-toggle="modal" data-bs-target="#caseStudy1">
+  <i class="fas fa-book-open"></i></a>
+    </h6>
+
+  </div>
+  </div>
+</div>
+
+<!-- Slide 2 -->
+<div class="carousel-item">
+  <div class="portfolio-wrapper">
+  <img src="images/project2.png" class="d-block w-100 img-fluid rounded shadow" alt="Aetram Trades Website">
+  <div class="carousel-caption bg-warning bg-opacity-30 p-2 rounded">
+    <h6 class="mb-2">
+      <a href="https://www.aetramtrades.in/" target="_blank" class="text-dark text-decoration-none">
+        Aetram Trades Website
+      </a>	<a href="#case-study" class="btn-view-case-study" data-bs-toggle="modal" data-bs-target="#caseStudy2">
+  <i class="fas fa-book-open"></i></a>
+    </h6>
+
+  </div>
+  </div>
+</div>
+
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="1"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal 1 -->
+<div class="modal fade" id="caseStudy1" tabindex="-1" aria-labelledby="caseStudy1Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-warning">
+        <h6 class="modal-title" id="caseStudy1Label">🎓 Aetram Groups Website - Case Study</h6>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <p data-aos="fade-up" data-aos-delay="250"><b>Role:</b> UI/UX Designer cum Developer – Responsible for layout design, structure, visual consistency, and part of the development team.</p>
+          <hr />
+
+          <h6 data-aos="fade-up" data-aos-delay="300">🔍 Overview</h6>
+          <ul data-aos="fade-up" data-aos-delay="350">
+            <li>Client: Aetram Group of Companies</li>
+            <li>Industry: Financial Services, Trading, IT & Corporate Services</li>
+            <li>Platform: Responsive website</li>
+            <li>Project Type: Corporate website with service listing and regional presence</li>
+            <li>Contribution: Designed and developed key layouts and pages (Home, Services, Bullion, and Loader screens)</li>
+          </ul>
+
+          <h6 class="mt-3" data-aos="fade-up" data-aos-delay="400">👁️ Problem Statement</h6>
+          <p data-aos="fade-up" data-aos-delay="450">
+            Aetram Group needed a digital presence that reflected their professional, high-value services across global regions (UAE, India, Mauritius, etc.). The challenge was to design a site that feels premium, informative, and credible.
+          </p>
+
+          <h6 class="mt-3" data-aos="fade-up" data-aos-delay="500">✏️ My Contribution</h6>
+          <p data-aos="fade-up" data-aos-delay="550">I was involved in both designing and implementing:</p>
+          <ul data-aos="fade-up" data-aos-delay="600">
+            <li>Landing Page with Loader screen and brand logo animation</li>
+            <li>Home Page layout with structured content (Intro, services, licensed regions)</li>
+            <li>Bullion Page with a clean product overview layout</li>
+            <li>Page responsiveness and visual alignment across devices</li>
+            <li>Ensured UI consistency with dark-gold color theme</li>
+            <li>Worked with development team for real-time testing and bug fixes</li>
+          </ul>
+
+          <hr data-aos="fade-up" data-aos-delay="650" />
+          <div class="row" data-aos="fade-up" data-aos-delay="700">
+            <div class="col-md-4">
+              <h6>🌟 Goals</h6>
+              <ul>
+                <li>Create a modern, responsive design</li>
+                <li>Clearly showcase services and regions</li>
+                <li>Convey trust through visual tone (dark theme + gold)</li>
+                <li>Ensure fast load and smooth transitions</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h6>👨‍👧‍👦 Target Audience</h6>
+              <ul>
+                <li>Business clients</li>
+                <li>Investors</li>
+                <li>Government & Corporate Partners</li>
+                <li>High-net-worth individuals</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h6>🎨 Tools Used</h6>
+              <ul>
+                <li>Figma: Wireframe layout & UI structure</li>
+                <li>HTML, CSS, JavaScript, Bootstrap 5</li>
+                <li>Responsive Testing Tools: Cross-device design checks</li>
+              </ul>
+            </div>
+          </div>
+
+          <hr data-aos="fade-up" data-aos-delay="750" />
+          <h6 data-aos="fade-up" data-aos-delay="800">🔍 UX Process</h6>
+          <div class="row" data-aos="fade-up" data-aos-delay="850">
+            <div class="col-md-4">
+              <h6>1. Content Mapping</h6>
+              <p>Gathered brand offerings and organized them into categories:</p>
+              <ul>
+                <li>Broking</li>
+                <li>IT Solutions</li>
+                <li>Bullion</li>
+                <li>HR and Corporate Services</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h6>2. Wireframing</h6>
+              <p>Structured content flow ensuring readability and hierarchy:</p>
+              <ul>
+                <li>Hero section with strong headline and brand tone</li>
+                <li>Services grid with icon-based layout for scalability</li>
+                <li>Bullion page split into product categories for clarity</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h6>3. Visual Design</h6>
+              <ul>
+                <li>Gold and black palette to evoke trust and luxury</li>
+                <li>Iconography used for clear communication of services</li>
+                <li>Real gold and crystal imagery to emphasize value</li>
+              </ul>
+            </div>
+          </div>
+
+          <hr data-aos="fade-up" data-aos-delay="900" />
+          <h6 data-aos="fade-up" data-aos-delay="950">📊 Impact</h6>
+          <p data-aos="fade-up" data-aos-delay="1000">
+            Delivered a visually cohesive, professional site.<br />
+            Structured layout improved readability and navigation.<br />
+            Professional branding tone attracted high-level leads.
+          </p>
+
+          <hr data-aos="fade-up" data-aos-delay="1050" />
+          <h6 data-aos="fade-up" data-aos-delay="1100">✨ Key Learnings</h6>
+          <p data-aos="fade-up" data-aos-delay="1150">
+            Consistent UI elements increase brand trust.<br />
+            Dark backgrounds require high contrast for readability.<br />
+            Collaboration between design and development teams enhances final product quality.
+          </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="caseStudy2" tabindex="-1" aria-labelledby="caseStudy2Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-warning">
+        <h6 class="modal-title" id="caseStudy2Label">🎓 Aetram Trades Website - Case Study</h6>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p data-aos="fade-up" data-aos-delay="300"><b>Role:</b> UI/UX Designer cum Developer – Responsible for layout design, structure, visual consistency, and part of the development team.</p>
+          <hr data-aos="fade-up" data-aos-delay="350" />
+
+          <h6 data-aos="fade-up" data-aos-delay="400">🔍 Overview</h6>
+          <ul data-aos="fade-up" data-aos-delay="450">
+            <li>Client: Aetram Trades</li>
+            <li>Industry: Financial Services, Trading, IT & Corporate Services</li>
+            <li>Platform: Responsive website</li>
+            <li>Project Type: Corporate website with service listing and regional presence</li>
+            <li>Contribution: Designed and developed key layouts and pages (Home, Services, Bullion, and Loader screens)</li>
+          </ul>
+
+          <h6 class="mt-3" data-aos="fade-up" data-aos-delay="500">👁️ Problem Statement</h6>
+          <p data-aos="fade-up" data-aos-delay="550">
+            Aetram Trades required a digital presence that reflected their professional, high-value services across global regions (UAE, India, Mauritius, etc.). The challenge was to design a site that feels premium, informative, and credible.
+          </p>
+
+          <h6 class="mt-3" data-aos="fade-up" data-aos-delay="600">✏️ My Contribution</h6>
+          <p data-aos="fade-up" data-aos-delay="650">I was involved in both designing and implementing:</p>
+          <ul data-aos="fade-up" data-aos-delay="700">
+            <li>Landing Page with Loader screen and brand logo animation</li>
+            <li>Invest and Trade Page layout with structured content (Intro, services, licensed regions)</li>
+            <li>Open Demat Page with Input Fields, Requirements space, Registration Steps</li>
+            <li>Products Page with a clean product overview layout</li>
+            <li>Page responsiveness and visual alignment across devices</li>
+            <li>Ensured UI consistency with dark-gold color theme</li>
+            <li>Worked with development team for real-time testing and bug fixes</li>
+          </ul>
+
+          <hr data-aos="fade-up" data-aos-delay="750" />
+          <div class="row" data-aos="fade-up" data-aos-delay="800">
+            <div class="col-md-4">
+              <h6>🌟 Goals</h6>
+              <ul>
+                <li>Create a modern, responsive design</li>
+                <li>Clearly showcase services and regions</li>
+                <li>Convey trust through visual tone (dark theme + gold)</li>
+                <li>Ensure fast load and smooth transitions</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h6>👨‍👧‍👦 Target Audience</h6>
+              <ul>
+                <li>Business clients</li>
+                <li>Investors</li>
+                <li>Government & Corporate Partners</li>
+                <li>High-net-worth individuals</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h6>🎨 Tools Used</h6>
+              <ul>
+                <li>Figma: Wireframe layout & UI structure</li>
+                <li>HTML, CSS, JavaScript, Bootstrap 5</li>
+                <li>Responsive Testing Tools: Cross-device design checks</li>
+              </ul>
+            </div>
+          </div>
+
+          <hr data-aos="fade-up" data-aos-delay="850" />
+          <h6 data-aos="fade-up" data-aos-delay="900">🔍 UX Process</h6>
+          <div class="row" data-aos="fade-up" data-aos-delay="950">
+            <div class="col-md-4">
+              <h6>1. Content Mapping</h6>
+              <p>Gathered brand offerings and organized them into categories:</p>
+              <ul>
+                <li>Invest</li>
+                <li>Trades</li>
+                <li>Products</li>
+                <li>Tools</li>
+                <li>Pay In</li>
+                <li>Back Office</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h6>2. Wireframing</h6>
+              <p>Structured content flow ensuring readability and hierarchy:</p>
+              <ul>
+                <li>Hero section with strong headline and brand tone</li>
+                <li>Services grid with icon-based layout for scalability</li>
+                <li>Product page split into product categories for clarity</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h6>3. Visual Design</h6>
+              <ul>
+                <li>Gold and black palette to evoke trust and luxury</li>
+                <li>Iconography used for clear communication of services</li>
+                <li>Real gold and crystal imagery to emphasize value</li>
+              </ul>
+            </div>
+          </div>
+
+          <hr data-aos="fade-up" data-aos-delay="1000" />
+          <h6 data-aos="fade-up" data-aos-delay="1050">📊 Impact</h6>
+          <p data-aos="fade-up" data-aos-delay="1100">
+            Delivered a visually cohesive, professional site.<br />
+            Structured layout improved readability and navigation.<br />
+            Professional branding tone attracted high-level leads.
+          </p>
+
+          <hr data-aos="fade-up" data-aos-delay="1150" />
+          <h6 data-aos="fade-up" data-aos-delay="1200">✨ Key Learnings</h6>
+          <p data-aos="fade-up" data-aos-delay="1250">
+            Consistent UI elements increase brand trust.<br />
+            Dark backgrounds require high contrast for readability.<br />
+            Effective communication between teams improves user experience.
+          </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap 5 JS -->
+
+
+
+<!-- LEARNINGS -->
+    <section id="learnings" data-aos="fade-up">
+      <div class="container">
+        <h2 class="text-center mb-2">My Learning Works</h2>
+        <p class="text-center small text-muted mb-4">Latest posts</p>
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card card1 h-100">
+              <img src="images/p1.png" class="card-img-top" alt="post1">
+          <div class="card-body">
+            <h6 class="card-title small mb-1">Photo Gallery Website</h6>
+            <p class="card-text small text-muted mb-2">A responsive gallery layout built with HTML, CSS, and JS.</p>
+            <div class="d-flex justify-content-between">
+              <a href="https://photositeworksample.netlify.app/" class="btn btn-outline-danger btn-small small" target="_blank">View Live</a>
+              <a href="https://github.com/shanthini91/Photo-Site" class="btn btn-outline-secondary btn-small small" target="_blank">View Code</a>
+            </div>
+          </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card card1 h-100">
+              <img src="images/p2.png" class="card-img-top" alt="post2">
+          <div class="card-body">
+            <h6 class="card-title small mb-1">Book Store Website</h6>
+            <p class="card-text small text-muted mb-2">A responsive book store layout built with HTML, CSS, and JS. Animations included.</p>
+            <div class="d-flex justify-content-between">
+              <a href="https://mybookstorepage.netlify.app/" class="btn btn-outline-danger btn-small small" target="_blank">View Live</a>
+              <a href="https://github.com/shanthini91/bookstore" class="btn btn-outline-secondary btn-small small" target="_blank">View Code</a>
+            </div>
+          </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card card1 h-100">
+              <img src="images/p3.png" class="card-img-top" alt="post3">
+          <div class="card-body">
+            <h6 class="card-title small mb-1">Bootstrap EMS</h6>
+            <p class="card-text small text-muted mb-2">A responsive basic EMS layout built with HTML, CSS, and JS.</p>
+            <div class="d-flex justify-content-between">
+              <a href="https://emsworksample.netlify.app/" class="btn btn-outline-danger btn-small small" target="_blank">View Live</a>
+              <a href="https://github.com/shanthini91/EMS" class="btn btn-outline-secondary btn-small small" target="_blank">View Code</a>
+            </div>
+          </div>
+            </div>
+          </div>
+        </div>
+		        <div class="row mt-1 g-4">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card card1 h-100">
+              <img src="images/p4.png" class="card-img-top" alt="post1">
+          <div class="card-body">
+            <h6 class="card-title small mb-1">Basic Bootstrap Multipage Website</h6>
+            <p class="card-text small text-muted mb-2">A responsive multipage layout built with HTML, CSS, and JS.</p>
+            <div class="d-flex justify-content-between">
+              <a href="https://mybootstrapresponsivesamplesite.netlify.app/" class="btn btn-outline-danger btn-small small" target="_blank">View Live</a>
+              <a href="https://github.com/shanthini91/bootstrap-responsive-page" class="btn btn-outline-secondary btn-small small" target="_blank">View Code</a>
+            </div>
+          </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card card1 h-100">
+              <img src="images/p5.png" class="card-img-top" alt="post2">
+          <div class="card-body">
+            <h6 class="card-title small mb-1">React Website</h6>
+            <p class="card-text small text-muted mb-2">A responsive single page layout built with React JS.</p>
+            <div class="d-flex justify-content-between">
+              <a href="https://my-react-page-seven.vercel.app/" class="btn btn-outline-danger btn-small small" target="_blank">View Live</a>
+              <a href="https://github.com/shanthini91/my-react-page" class="btn btn-outline-secondary btn-small small" target="_blank">View Code</a>
+            </div>
+          </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card card1 h-100">
+              <img src="images/p6.png" class="card-img-top" alt="post3">
+          <div class="card-body">
+            <h6 class="card-title small mb-1">My Portfolio Website</h6>
+            <p class="card-text small text-muted mb-2">A responsive portfolio layout built with HTML, CSS, and JS.</p>
+            <div class="d-flex justify-content-between">
+              <a href="https://shanusportfolio.netlify.app/" class="btn btn-outline-danger btn-small small" target="_blank">View Live</a>
+              <a href="https://github.com/shanthini91/my-portfolio" class="btn btn-outline-secondary btn-small small" target="_blank">View Code</a>
+            </div>
+          </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      <div class="divider my-2"></div>
+	
+
+
+
+  
+
+
+<section id="contact" class="py-5" data-aos="fade-up">
+  <div class="container">
+    <h2 class="text-center mb-2">Contact</h2>
+    <p class="text-center small text-muted mb-4">Get in touch — I respond quickly to messages</p>
+    
+    <div class="row g-4 align-items-start">
+      
+      <!-- Contact Form -->
+      <div class="col-lg-8" data-aos="fade-right">
+        <form id="contactForm" action="https://formspree.io/f/xblkbgjr" method="POST">
+          <div class="mb-2">
+            <input type="text" name="name" class="form-control form-control-sm" placeholder="Your name" required>
+          </div>
+          <div class="mb-2">
+            <input type="email" name="email" class="form-control form-control-sm" placeholder="Email" required>
+          </div>
+          <div class="mb-2">
+            <textarea name="message" class="form-control form-control-sm" rows="5" placeholder="Message" required></textarea>
+          </div>
+          <button class="btn btn-warning btn-sm w-100" type="submit">Send Message</button>
+        </form>
+
+        <!-- Message box -->
+        <div id="formMessage" class="mt-2 small"></div>
+      </div>
+
+      <!-- Contact Details -->
+      <div class="col-lg-4" data-aos="fade-left">
+        <h6 class="small mb-1">Home</h6>
+        <p class="small text-muted mb-2">
+          <i class="bi bi-geo-alt me-1 text-warning"></i> 38/2,
+          Venkatachalapathy Street,<br>
+          Shenoy Nagar, Chennai – 600030
+        </p>
+        <p class="small text-muted mb-2">
+          <i class="bi bi-telephone me-1 text-warning"></i> +91 8778539686
+        </p>
+        <p class="small text-muted mb-2">
+          <i class="bi bi-envelope me-1 text-warning"></i> shanthinipriyanka14@gmail.com
+        </p>
+
+        <div class="mt-3">
+          <h6 class="small mb-1">Social</h6>
+          <a class="me-2 text-muted" href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+          <a class="me-2 text-muted" href="#"><i class="fab fa-github fa-lg"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+    <!-- MAP -->
+    <section class="map py-4" data-aos="fade-up">
+      <div class="container">
+        <!-- Example Google Map embed (replace with your own API/embed if needed) -->
+        <iframe
+		src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.992932257973!2d80.2275023153434!3d13.079527516370823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265f7b2d8cb0d%3A0xa12407d50cc1a9ab!2sRose%20Beauty%20Salon!5e0!3m2!1sen!2sin!4v1693123456789!5m2!1sen!2sin" 
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center">
+      <small>© 2025 Shanthini Priyanka • Designed &amp; built by Shanu</small>
+    </footer>
+
+  </main>
+
+  <!-- Scripts: Bootstrap, AOS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <script>
+    // init AOS
+    AOS.init({ duration: 750, once: true });
+
+    // Smooth anchor scrolling (already handled by scroll-behavior: smooth but keep for offset control if needed)
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', function(e){
+        const href = this.getAttribute('href');
+        if(!href || href === '#') return;
+        const el = document.querySelector(href);
+        if(!el) return;
+        // Prevent default if it's an on-page link
+        e.preventDefault();
+        el.scrollIntoView({behavior:'smooth', block:'start'});
+        // close offcanvas if open (mobile)
+        const offcanvasEl = document.querySelector('#offcanvasSidebar');
+        if(offcanvasEl && offcanvasEl.classList.contains('show')){
+          bootstrap.Offcanvas.getInstance(offcanvasEl)?.hide();
+        }
+      });
+    });
+
+    // IntersectionObserver to update right nav active state
+    (function(){
+      const sections = document.querySelectorAll('main section[id]');
+      const navIcons = document.querySelectorAll('.right-nav .nav-icon');
+      if(!sections.length || !navIcons.length) return;
+      const options = { root:null, threshold: 0.45 };
+      const obs = new IntersectionObserver(entries=>{
+        entries.forEach(entry=>{
+          if(entry.isIntersecting){
+            const id = entry.target.id;
+            navIcons.forEach(nav=>{
+              nav.classList.toggle('active', nav.getAttribute('href') === '#' + id);
+            });
+          }
+        });
+      }, options);
+      sections.forEach(s => obs.observe(s));
+    })();
+
+
+	
+	
+document.getElementById("contactForm").addEventListener("submit", async function(event) {
+  event.preventDefault();
+
+  const form = event.target;
+  const formMessage = document.getElementById("formMessage");
+
+  const showMessage = (text, color, animation) => {
+    formMessage.textContent = text;
+    formMessage.style.color = color;
+    formMessage.className = animation; // apply animation class
+    formMessage.style.opacity = "1";
+
+    setTimeout(() => {
+      formMessage.style.opacity = "0";
+    }, 3000); // Fade out after 3 seconds
+  };
+
+  showMessage("Sending...", "blue", "");
+
+  try {
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      showMessage("✅ Thanks! Your message has been sent.", "green", "pop");
+      form.reset();
+    } else {
+      showMessage("❌ Oops! Something went wrong. Please try again.", "red", "shake");
+    }
+  } catch (error) {
+    showMessage("❌ Error sending message. Check your connection.", "red", "shake");
+  }
+});
+
+const slides = document.querySelectorAll(".slide");
+let currentIndex = 0;
+
+document.querySelector(".next").addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % slides.length;
+  updateSlider();
+});
+
+document.querySelector(".prev").addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+  updateSlider();
+});
+
+function updateSlider() {
+  document.querySelector(".slider").style.transform =
+    `translateX(-${currentIndex * 100}%)`;
+}
+
+</script>
+
+  <!-- Bottom Nav for Mobile 
+<div class="bottom-nav d-lg-none">
+  <a href="#hero" class="active"><i class="bi bi-house bottom-nav-icon"></i></a>
+  <a href="#skills"><i class="bi bi-briefcase bottom-nav-icon"></i></a>
+  <a href="#certifications"><i class="bi bi-star bottom-nav-icon"></i></a>
+  <a href="#work"><i class="bi bi-briefcase-fill bottom-nav-icon"></i></a>
+  <a href="#portfolio"><i class="bi bi-grid bottom-nav-icon"></i></a>
+  <a href="#learnings"><i class="bi bi-mortarboard bottom-nav-icon"></i></a>
+  <a href="#contact"><i class="bi bi-envelope bottom-nav-icon"></i></a>
+</div>-->
+</body>
+</html>
