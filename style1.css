@@ -151,7 +151,7 @@ body:hover {
 }
 
 .sidebar .progress-bar {
-  background: var(--accent);
+  background: #F84840;
 }
 
 .sidebar .socials a {
@@ -785,4 +785,5 @@ footer {
     height: 40px;
   }
 }
+
 
