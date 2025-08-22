@@ -117,6 +117,10 @@ body:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+body.offcanvas-open .bottom-nav {
+  display: none !important;
+}
+
 
 .menu-icon {
   background: linear-gradient(90deg, #ff4e50, #f9d423);
@@ -785,5 +789,6 @@ footer {
     height: 40px;
   }
 }
+
 
 
