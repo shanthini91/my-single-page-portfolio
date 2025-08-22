@@ -90,7 +90,7 @@ body:hover {
   bottom: 0;
   width: 240px;
   padding: 26px 18px;
-  background: #F84840;
+  background: #ffb400;
   border-right: 1px solid #eee;
   z-index: 1050;
   overflow: auto;
@@ -104,7 +104,7 @@ body:hover {
   height: 110px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid var(--accent);
+  border: 3px solid #F84840;
   display: block;
   margin: 0 auto 8px;
 }
@@ -187,7 +187,7 @@ section {
 }
 
 .hero {
-  background: #F84840;
+  background: #ffb400;
   padding: 56px 20px;
   display: flex;
   flex-wrap: wrap; /* Avoid overflow on narrow screens */
@@ -196,7 +196,7 @@ section {
 }
 
 .highlight {
-  color: var(--accent);
+  color: #F84840;
   font-weight: 700;
 }
 
@@ -785,3 +785,4 @@ footer {
     height: 40px;
   }
 }
+
