@@ -930,6 +930,15 @@ function updateSlider() {
     `translateX(-${currentIndex * 100}%)`;
 }
 
+document.addEventListener("shown.bs.offcanvas", () => {
+  document.body.classList.add("offcanvas-open");
+});
+
+document.addEventListener("hidden.bs.offcanvas", () => {
+  document.body.classList.remove("offcanvas-open");
+});
+
+	  
 </script>
 
   <!-- Bottom Nav for Mobile 
@@ -944,6 +953,7 @@ function updateSlider() {
 </div>-->
 </body>
 </html>
+
 
 
 
